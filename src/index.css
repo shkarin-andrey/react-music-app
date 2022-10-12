@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~rc-slider/assets/index.css';
+
+/* .scrollbar::-webkit-scrollbar-track {
+    background-color: red;
+} */
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #cccccc44;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #3ba0ff;
+    border-radius: 6px;
 }
